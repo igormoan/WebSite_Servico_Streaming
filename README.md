@@ -1,13 +1,27 @@
-![](https://i.imgur.com/xG74tOh.png)
 
-# Desafio | Front-end - Módulo 3
 
-Você acabou de ser contratado pela melhor empresa de tecnologia do mundo: a **CUBOS**.
-Sua primeira tarefa como desenvolvedor é criar uma aplicação para um serviço de streaming (pense num Netflix).
+<h1 align=”center”>Projeto Serviço de Streaming - CuboFlix</h1>
 
-Seu papel é construir um website com [o seguinte design](https://www.figma.com/file/CLrsT8zY1Tfr53dinLljMu/Desafio-M%C3%B3dulo-2----2.0?node-id=0%3A1) que permita: (funcionalidades com \* ao lado são obrigatórias)
+
+O projeto em questão, foi a criação de um website com aplicação para um serviço de streaming, como por exemplo, um Netflix.</br>
+Nesse projeto aplicou-se as tecnologias <strong> <i> HTML, CSS, JAVASCRIPT </i> </strong>
+
+No HTML foi criado a estrutura e o conteúdo da página web. Definindo a estrutura lógica dos elementos da página, como títulos, parágrafos, imagens e links.
+
+O CSS foi definido a aparência e o layout do website, permitindo as aplicações dos estilos, como cores, fontes, margens e posições. Para isso, foi separado 3 pastas (COLOR, GLOBAL e STYLE) Assim, é possível prezar pela organização dos códigos, aplicando um código limpo.
+
+Por fim, temos o JavaScript onde foi adicionado a interatividade e as funcionalidades dinâmicas da páginas web, criando os elementos interativos. Para isso, é utilizado a manipução da DOM e o seus eventos, como o click, keydown e etc. Além do uso de funções assíncronas e a integração com APIS.
+#
+
+# Detalhe do projeto:
+![](https://raw.githubusercontent.com/joakin92/Streaming-Website-CubosFlix/main/screenshots/01_cubosflix.jpg)
+
+
+
 
 - Visualização de filmes (\*)
+
+
 - Paginação de filmes (\*)
 - Busca de filmes (\*)
 - "Filme do dia" (\*)
@@ -65,22 +79,10 @@ Exemplo de retorno:
 }
 ```
 
-A estrutura HTML deverá ser a seguinte:
-![](https://i.imgur.com/s8j6m3E.png)
-
-Informações do retorno da API necessárias para o preenchimento:
-
-- background-image da `<div class="movie">` === poster_path
-- texto do `<span class="movie__title">` === title
-- texto do `<span class="movie__rating">` === vote_average
-
-Essa estrutura terá que ser criada para **cada filme** poderá ser construida dinamicamente pela DOM, porém, isso **não é obrigatório**.
-
-Cada filme deverá ser colocado dentro da `<div class="movies">`
 
 ### Paginação de filmes
 
-Você deverá assumir que vai utilizar **18 filmes**. Apesar da API fornecer, em média 20 filmes, apenas os 18 primeiros devem ser utilizados. Cada página deve exibir **6 filmes** por vez, portanto, considerando o número total de filmes (**18**) e de filmes por página (**6**), a aplicação deve ter **3 páginas (0, 1, 2)**.
+Contendo **18 filmes**. Cada página exibirá **6 filmes** por vez, portanto, considerando o número total de filmes (**18**) e de filmes por página (**6**), a aplicação deve ter **3 páginas (0, 1, 2)**.
 
 O `<button class="btn-prev">`, quando clicado, se não estiver na página 0, terá que voltar 1 página, se não, levará o usuário para a página 2
 O `<button class="btn-next">`, quando clicado, se não estiver na página 2, terá que avançar 1 página, se não, levará o usuário para a página 0
@@ -241,25 +243,11 @@ Exemplo de retorno:
 }
 ```
 
-A estrutura HTML deverá ser a seguinte:
-![](https://i.imgur.com/72ixMvR.png)
 
-Informações do retorno do **Endpoint Geral** necessárias para o preenchimento:
 
-- background-image da `<div class="highlight__video">` === backdrop_path
-- texto do `<h3 class="highlight__title">` === title
-- texto do `<span class="highlight__rating">` === vote_average
-- texto do `<span class="highlight__genres">` === genres (como genres é um array de objetos, você deverá criar uma string concatenando todos os valores de genre.name e separando-os por vírgula)
-- texto do `<span class="highlight__launch">` === release_date (como release_date é uma data, você **poderá** transforma-lá em outro formato)
-- texto do `<p class="highlight__description">` === overview
-
-Informações do retorno do **Endpoint de vídeos** necessárias para o preenchimento:
-
-- href do `<a class="highlight__video-link">` === concatene a string "https://www.youtube.com/watch?v=" com o valor de **key** (como o Endpoint de vídeos retorna um array, você deverá pegar o valor de **key** do primeiro item)
 
 ### Modal de filme
 
-Ao clicar na `<div class="movie">` a `<div class="modal hidden">` deverá perder a classe "hidden" (isso irá **abrir** o modal)
 
 Assim que o modal for **aberto**, ele deverá ser preenchido com as informações do [seguinte endpoint](https://tmdb-proxy.cubos-academy.workers.dev/3/movie/?language=pt-BR) passando um parâmetro de rota com o valor do **id** do filme. Ex: Buscando pelo filme com id 436969 https://tmdb-proxy.cubos-academy.workers.dev/3/movie/436969?language=pt-BR
 
@@ -368,37 +356,9 @@ Exemplo de retorno:
 }
 ```
 
-A estrutura HTML deverá ser a seguinte:
-![](https://i.imgur.com/quJYytr.png)
 
-Informações do retorno da API necessárias para o preenchimento:
 
-- texto do `<h3 class="modal__title">` === title
-- src da `<img class="modal__img">` === backdrop_path
-- texto do `<p class="modal__description">` === overview
-- texto da `<div class="modal__average">` === vote_average
-- **ISSO NÃO É OBRIGATÓRIO**
-  - para cada genre, você deverá criar um `<span class="modal__genre">`, colocar como texto o valor de genre.name e adicioná-lo na `<div class="modal__genres">`
-
-### Mudança de tema **NÃO OBRIGATÓRIO**
+### Mudança de tema
 
 Ao clicar na `<img class="btn-theme">`, caso o **tema atual** seja "light" ou "claro", o mesmo deverá ser trocado para o tema "dark" ou "escuro", após isso, você deverá modificar o tema (imagens e cores) do seu website de acordo com o Figma. Essa troca de tema, poderá ser facilitada caso seja feita por meio da troca de variáveis CSS.
 
-## Dica
-
-Para obter uma data por extenso, use o código abaixo:
-
-```javascript
-new Date(currentDate).toLocaleDateString("pt-BR", {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-  timeZone: "UTC",
-});
-
-// RETORNO "21 de outubro de 2022"
-```
-
-**LEMBRE-SE**: Feito é melhor do que perfeito, mas não faça mal feito!!!
-
-###### tags: `front-end` `HTML` `DOM` `CSS` `desafio`
