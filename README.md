@@ -14,7 +14,7 @@ Por fim, temos o JavaScript onde foi adicionado a interatividade e as funcionali
 #
 
 # Detalhe do projeto:
-![](https://raw.githubusercontent.com/joakin92/Streaming-Website-CubosFlix/main/screenshots/01_cubosflix.jpg)
+![](https://github.com/igormoan/WebSite_Servico_Streaming/blob/main/screenshots/dark_theme.jpg)
 
 
 
@@ -359,6 +359,8 @@ Exemplo de retorno:
 
 
 ### Mudança de tema
+
+![](https://github.com/igormoan/WebSite_Servico_Streaming/blob/main/screenshots/dark_theme.jpg)
 
 Ao clicar na `<img class="btn-theme">`, caso o **tema atual** seja "light" ou "claro", o mesmo deverá ser trocado para o tema "dark" ou "escuro", após isso, você deverá modificar o tema (imagens e cores) do seu website de acordo com o Figma. Essa troca de tema, poderá ser facilitada caso seja feita por meio da troca de variáveis CSS.
 
