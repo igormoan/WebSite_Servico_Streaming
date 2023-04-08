@@ -248,6 +248,7 @@ Exemplo de retorno:
 
 ### Modal de filme
 
+https://github.com/igormoan/WebSite_Servico_Streaming/blob/main/screenshots/modal.jpg
 
 Assim que o modal for **aberto**, ele deverá ser preenchido com as informações do [seguinte endpoint](https://tmdb-proxy.cubos-academy.workers.dev/3/movie/?language=pt-BR) passando um parâmetro de rota com o valor do **id** do filme. Ex: Buscando pelo filme com id 436969 https://tmdb-proxy.cubos-academy.workers.dev/3/movie/436969?language=pt-BR
 
