@@ -14,7 +14,7 @@ Por fim, temos o JavaScript onde foi adicionado a interatividade e as funcionali
 #
 
 # Detalhe do projeto:
-![](https://github.com/igormoan/WebSite_Servico_Streaming/blob/main/screenshots/dark_theme.jpg)
+![](https://github.com/igormoan/WebSite_Servico_Streaming/blob/main/screenshots/web_site.jpg)
 
 
 
