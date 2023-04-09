@@ -11,7 +11,7 @@ No HTML foi criado a estrutura e o conteúdo da página web. Definindo a estrutu
 
 O CSS foi definido a aparência e o layout do website, permitindo as aplicações dos estilos, como cores, fontes, margens e posições. Para isso, foi separado 3 pastas (COLOR, GLOBAL e STYLE) Assim, é possível prezar pela organização dos códigos, aplicando um código limpo.
 
-Por fim, temos o JavaScript onde foi adicionado a interatividade e as funcionalidades dinâmicas da páginas web, criando os elementos interativos. Para isso, é utilizado a manipução da DOM e o seus eventos, como o <i>click, keydown</i> e etc. Além do uso de funções assíncronas e a integração com APIS.
+Por fim, temos o JavaScript onde foi adicionado a interatividade e as funcionalidades dinâmicas da páginas web, criando os elementos interativos. Para isso, foi utilizado a manipulação da DOM e o seus eventos, como o <i>click, keydown</i> e etc. Além do uso de funções assíncronas e a integração com APIS.
 #
 
 # Detalhe do Projeto:
